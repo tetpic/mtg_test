@@ -1,0 +1,97 @@
+.feedback {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-inline: 30px;
+    margin-bottom: 12px;
+    border-radius: 15px;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        padding: 20px 30px;
+    }
+
+    &__name {
+        font-size: 20px;
+        font-weight: 500;
+        color: #575757;
+    }
+
+    &__date {
+        font-size: 14px;
+        font-weight: 400;
+        color: #575757;
+        align-self: flex-end;
+    }
+
+    &__review {
+        font-size: 22px;
+        font-weight: 400;
+        color: black;
+    }
+
+    &__button {
+        border: unset;
+        background-color: black;
+        border-radius: 15px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #f1f1f1;
+        padding: 6px 20px;
+        box-sizing: border-box;
+        transition: .2s linear;
+        cursor: pointer;
+        border: 2px transparent solid;
+        &:hover {
+            background-color: antiquewhite;
+            color: black;
+            border: 2px black solid;
+        }
+
+        &_disabled {
+            background-color: #575757;
+            pointer-events: none;
+        }
+    }
+
+    &__pager {
+        border: 2px black solid;
+        padding: 4px;
+        background-color: antiquewhite;
+        border-radius: 50%;
+        font-weight: 800;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .2s linear;
+        &:hover {
+            background-color: #575757;
+        }
+
+        &_active {
+            pointer-events: none;
+        }
+
+
+
+    }
+}
+
+.paginator {
+    display: flex;
+    padding: 12px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status {
+    font-size: 24px;
+    font-weight: 600;
+    color: #575757;
+    padding: 0px 30px;
+}

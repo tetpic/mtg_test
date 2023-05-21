@@ -1,0 +1,81 @@
+.header {
+    background-color: #202020;
+    color: white;
+    display: flex;
+    padding: 20px 10px;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    filter: invert(0.88);
+}
+
+.lang {
+    margin-right: auto;
+    position: relative;
+    &__title {
+        cursor: pointer;        
+        column-gap: 12px;
+        align-items: center;
+        display: flex;
+        
+    }
+
+   
+}
+
+.paragraph {
+    pointer-events: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.svg {
+    transition: .2s linear;
+    transform: rotate(0deg);
+    pointer-events: none;
+
+    &_active {
+        transform: rotate(90deg);
+    }
+}
+
+.list {
+    position: absolute;
+    background-color: black;
+    border-radius: 15px;
+    list-style: none;
+    display: flex;
+    top: -20%;
+    row-gap: 10px;
+    left: 110%;
+    font-size: 17px;
+    max-height: 0px;
+    transition: 0.2s linear;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 0;
+    &_active {
+        max-height: 100px;
+        // padding: 10px 20px;
+    }
+
+    li {
+        padding: 10px 20px;
+        background-color: transparent;
+        transition: .2s linear;
+        cursor: pointer;
+        &:hover {
+            background-color: aliceblue;
+            color: black;
+        }
+    }
+}
+
+
+
+// .clock {
+        
+// }
